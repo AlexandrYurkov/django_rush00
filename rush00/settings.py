@@ -55,7 +55,7 @@ ROOT_URLCONF = 'rush00.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['templates', 'data'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
