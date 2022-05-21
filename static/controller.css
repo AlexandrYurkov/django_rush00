@@ -1,0 +1,82 @@
+#controller {
+    background: rgba(0, 250, 18, 0.07);
+    width: 500px;
+    height: 200px;
+    box-sizing: border-box;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.controller_arrows_container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+#up, #down, #left, #right {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 50px;
+    background: #D9D9D9;
+}
+
+#up {
+    left: 65px;
+    top: 15px;
+}
+
+#down {
+    left: 65px;
+    top: 85px;
+}
+
+#left {
+    left: 30px;
+    top: 50px;
+    transform: rotate(-90deg);
+
+}
+
+#right {
+    right: 30px;
+    top: 50px;
+    transform: rotate(-90deg);
+
+}
+
+
+.controller_menu_container {
+    width: 80px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.controller_menu_container > *:nth-last-child(1){
+    margin-top: 10px;
+}
+
+
+.controller_buttons_container {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.controller_buttons_container #button_a, #button_b {
+    position: absolute;
+}
+
+.controller_buttons_container #button_a{
+    left: 20px;
+    bottom: 20px;
+}
+
+.controller_buttons_container #button_b{
+    right: 20px;
+    top: 20px;
+}

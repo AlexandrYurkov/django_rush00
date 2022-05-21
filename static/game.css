@@ -1,0 +1,41 @@
+#game {
+    background-color: rgba(247, 74, 74, 0.13);
+    width: 500px;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+
+
+}
+
+.gamefield {
+    box-sizing: border-box;
+    background-color: #D9D9D9;
+    width: 46px;
+    height: 46px;
+    border: 1px solid black;
+
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.gamefield.empty {
+}
+
+.gamefield.user {
+    background-image: url("/static/icons/userIcon.png");
+    background-size: 32px 37px;
+}
+
+.gamefield.treasure {
+    background-image: url("/static/icons/treasure.png");
+    background-size: 37px;
+
+}
+
+.gamefield.userOnTreasure {
+    background-size: 37px;
+    background-image: url("/static/icons/userOnTreasure.png");
+}
